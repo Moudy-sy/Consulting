@@ -88,7 +88,6 @@ video {
     border-radius: 25px;
     display: flex;
     width: 90%;
-
 }
 
 .Review {
@@ -145,39 +144,71 @@ h4 {
 
 /* Mobile */
 @media only screen and (max-width: 600px) {
+    header {
+        height: 60px;
+
+    }
+
+    .h1 {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    a {
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .column {
-        width: 100%;
-        display: block;
+        flex-basis: 100%;
+        margin: 10px 0;
+        width: 90%;
     }
 
-    h2 {
-        font-size: 20px;
+    .column1 {
+        flex-basis: 100%;
+        text-align: left;
     }
 
-    em {
-        font-size: 12px;
+    .column2 {
+        min-width: unset;
+        text-align: center;
     }
 
-    p {
-        font-size: 12px;
+    .column3 {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    video {
+        margin: 10px 0;
     }
 
     .review {
-        margin-top: 20px;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 25px;
-        display: flex;
-        width: 200%;
-        margin-left: -180px;
-        text-align: left;
-
+        margin: 10px 0;
+        padding: 10px;
+        margin-left: 5px !important;
+        width: 100% !important;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .h {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+    }
+
+    body {
+        max-width: 414px;
+        margin: 0 auto;
     }
 }
+
 
 /* Tabelt */
 @media only screen and (max-width: 870px) {
