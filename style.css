@@ -121,7 +121,7 @@ video {
 footer {
     height: 50px;
     background-color: #02233e;
-    color: #fff;
+    color: #fff !important;
     display: flex;
     align-items: center;
     justify-content: center;
