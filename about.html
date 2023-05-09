@@ -75,6 +75,35 @@ p {
         display: flex;
         text-align: left;
     }
+    @media only screen and (max-width: 600px) {
+    .team-member {
+    width: 80%;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.365);
+    height: 425px;
+    transition: height 0.5s ease-out;
+    }
+
+    .team-member img {
+     height: 370px;
+     object-fit: cover;
+     object-position: center center;
+    }
+    .team-member:hover {
+    height: 500px;
+    }
+    .team-member h3 {
+      margin: 10px;
+      font-size: 24px;
+      color: #333;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}
 
   </style>
   <body>
