@@ -90,23 +90,9 @@
             </nav>
         </div>
     </header>
+    
     <div class="contact">
-        <div class="container">
-        <h2>Let us call you</h2>
-        <form action="submit-form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-    
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea><br>
-    
-            <input type="submit" value="Send">
-        </form>
-    </div>
-    <div class="container">
+      <div class="container">
         <span class="contact">
             <h2>Contact Information</h2>
             <p>Manchester, United Kingdom</p>
@@ -114,6 +100,30 @@
             <a class="support" href="tel:+447418122925">Phone: +447 418 122 925</a>
         </span>
           </div>
+        <div class="container">
+        <h2>Let's talk</h2>
+        <p>The route to better outcomes starts with a frank, open discussion.</p>
+        <p>Drop us a line and we'll get the conversation going.</p>
+        <br>
+        <form action="submit-form.php" method="post">
+            <label for="name">First Name*</label>
+            <input type="text" id="name" name="name" placeholder="Type your first name" required><br>
+          
+            <label for="name">Last Name*</label>
+            <input type="text" id="last" name="last" placeholder="Type your last name" required><br>
+    
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" placeholder="Type your email" required><br>
+
+            <label for="name">Organisation Name</label>
+            <input type="text" id="business" name="Bname" placeholder="Type your organisation name" required><br>
+    
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Type your message" required></textarea><br>
+    
+            <input type="submit" value="Submit">
+        </form>
+    </div>
         </div>
         <footer><p>&copy; 2023 <em>Maximumtop</em></p></footer>
 </html>
