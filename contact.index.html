@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Get in touch</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <style>
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      font-family: Arial, sans-serif;
+      text-align: left;
+    }
+    
+    input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    textarea{
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+      min-height: 300px;
+    }
+    
+    input[type=submit] {
+      background-color: #00324f;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin: 20px;
+    }
+    h2 {
+        text-align: center;
+        margin: 20px;
+    }
+    .contact{
+        display: inline;
+        align-items: center;
+        text-align: center;
+    }
+    .support {
+        color: #00324f;
+    }
+  </style>
+  
+  
+  <body>
+    <header>
+        <div class="column4">
+            <a class="h1" href="index.html">Maximumtop</a>
+        </div>
+        <div class="column1">
+            <nav>
+                <a href="./about.html">About</a>
+                <a href="">Blog</a>
+                <a href="./contact.index.html">Get in touch</a>
+            </nav>
+        </div>
+    </header>
+    <div class="contact">
+        <div class="container">
+        <h2>Let us call you</h2>
+        <form action="submit-form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br>
+    
+            <input type="submit" value="Send">
+        </form>
+    </div>
+    <div class="container">
+        <span class="contact">
+            <h2>Contact Information</h2>
+            <p>Manchester, United Kingdom</p>
+            <a class="support" href="mailto:support@maximumtop.co.uk">Email: support@maximumtop.co.uk</a>
+            <a class="support" href="tel:+447418122925">Phone: +447 418 122 925</a>
+        </span>
+          </div>
+        </div>
+    <footer>
+
+    </footer>
+</html>

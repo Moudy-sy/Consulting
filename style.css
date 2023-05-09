@@ -21,10 +21,21 @@ header {
     font-weight: 700
 }
 
+.h1:hover {
+    color: #0064b6;
+    text-shadow: 0px 0px 20px rgba(255, 0, 0, 0.575);
+}
+
+
 a {
     color: white;
     text-decoration: none;
     margin: 10px;
+}
+
+a:hover {
+    color: #038bfb;
+    text-shadow: 0px 0px 20px rgba(255, 0, 0, 0.575);
 }
 
 /* Main content styles */
@@ -72,6 +83,10 @@ main {
     padding: 20px;
     text-align: left;
     border-radius: 10px;
+}
+
+.component:hover {
+    height: 120px;
 }
 
 /* Video styles */
@@ -144,6 +159,7 @@ h4 {
 
 /* Mobile */
 @media only screen and (max-width: 600px) {
+
     header {
         height: 60px;
 
@@ -162,6 +178,7 @@ h4 {
     main {
         flex-direction: column;
         align-items: center;
+        box-sizing: border-box;
     }
 
     .column {
@@ -204,7 +221,13 @@ h4 {
     }
 
     body {
+        max-width: 100% !important;
+        min-width: 100% !important;
         margin: 0 auto;
+    }
+
+    footer {
+        min-width: 100%;
     }
 }
 
