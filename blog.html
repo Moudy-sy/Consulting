@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our blog</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header>
@@ -21,7 +22,14 @@
         </div>
     </header>
     <style>
-        #posts {
+
+        body{
+            background-color: #001024;
+        }
+        * {
+            color: #fff;
+        }
+#posts {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,16 +46,17 @@
 .post {
   margin-bottom: 30px;
   padding: 20px;
-  background-color: #f8f8f8;
+  background-color: #f8f8f832;
   border-radius: 5px;
   max-width: 80%;
-  text-align: center;
+  text-align: left;
 }
 
 .post h3 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
+  
 }
 
 .post img {
@@ -62,41 +71,63 @@
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 10px;
+  text-align: left;
+  color: #a7a7a7;
 }
 
 .post a {
   display: inline-block;
   padding: 10px 20px;
   background-color: #003a6c;
-  color: #fff;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s ease-out;
+  font-size: 14px;
 }
 
 .post a:hover {
   background-color: #001a3c;
 }
+.heart-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.heart-btn i {
+  font-size: 25px;
+  color: #fff;
+}
+
+.heart-btn:hover i {
+  color: rgb(184, 0, 0);
+}
+
+
+
     </style>      
           <section id="posts">
             <h2>Recent Posts</h2>
-            <div class="post column">
+            <div class="post">
                 <img src="https://blog.hubspot.com/hubfs/how-to-run-a-business.jpg" alt="Post Image">
                 <h3>Success Story see how Dania managed to open her small business</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at aliquam metus, ac vestibulum nisi. Fusce ac dapibus quam, eu tincidunt leo.</p>
               <a href="#">Read the artical</a>
+              <button class="heart-btn"><i class="fa fa-gittip"></i> 5</button>
             </div>
             <div class="post">
                 <img src="https://imageio.forbes.com/specials-images/imageserve/6019b08a2e6c70dfbfb61e4d/Students-working-on-projects-/960x0.jpg?format=jpg&width=960" alt="Post Image">
                 <h3>Why should you try to learn programming as early as possible?</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at aliquam metus, ac vestibulum nisi. Fusce ac dapibus quam, eu tincidunt leo.</p>
               <a href="#">Read the artical</a>
+              <button class="heart-btn"><i class="fa fa-gittip"></i> 11</button>
             </div>
             <div class="post">
                 <img src="https://cdn.skedsocial.com/app/uploads/2021/04/03141226/Social-media-content-calendar.jpg" alt="Post Image">
                 <h3>10 things improve your social media content</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at aliquam metus, ac vestibulum nisi. Fusce ac dapibus quam, eu tincidunt leo.</p>
               <a href="#">Read the artical</a>
+              <button class="heart-btn"><i class="fa fa-gittip"></i> 23</button>
             </div>
           </section> 
           <footer><p>&copy; 2023 <em>Maximumtop</em></p></footer>
