@@ -93,6 +93,8 @@ main {
     height: 120px !important;
     transition: height 0.5s ease-out;
     margin-top: -10px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 
