@@ -172,7 +172,6 @@ h4 {
 
     header {
         height: 60px;
-
     }
 
     .h1 {
@@ -219,10 +218,8 @@ h4 {
         flex-basis: 100%;
         text-align: center;
     }
-
-
-    .column:hover {
-        height: 100% !important;
+    .column:hover .component {
+        height: 150px !important;
     }
 
     video {
