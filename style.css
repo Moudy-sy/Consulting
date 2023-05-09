@@ -21,6 +21,7 @@ header {
     font-weight: 700
 }
 
+
 .h1:hover {
     color: #0064b6;
     text-shadow: 0px 0px 20px rgba(255, 0, 0, 0.575);
@@ -57,6 +58,8 @@ main {
     height: 170px;
     min-width: 200px;
     cursor: pointer;
+    overflow: hidden;
+    transition: height 0.5s ease-out;
 }
 
 .column1 {
@@ -85,9 +88,13 @@ main {
     border-radius: 10px;
 }
 
-.component:hover {
-    height: 120px;
+.column:hover .component {
+    height: 120px !important;
+    transition: height 0.5s ease-out;
+    margin-top: -10px;
 }
+
+
 
 /* Video styles */
 video {
@@ -157,6 +164,10 @@ h4 {
     color: rgb(0, 45, 66);
 }
 
+.dis {
+    display: none;
+}
+
 /* Mobile */
 @media only screen and (max-width: 600px) {
 
@@ -180,16 +191,20 @@ h4 {
         align-items: center;
         box-sizing: border-box;
     }
-    
-    .component:hover {
-    height: 150px;
-    }
 
     .column {
-        flex-basis: 100%;
-        margin: 10px 0;
         width: 90%;
+        overflow: hidden;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 10px;
     }
+
+    .dis {
+        display: none;
+        margin-top: 5px;
+    }
+
 
     .column1 {
         flex-basis: 100%;
@@ -204,6 +219,11 @@ h4 {
     .column3 {
         flex-basis: 100%;
         text-align: center;
+    }
+
+
+    .column:hover .component {
+        height: 200px !important;
     }
 
     video {
@@ -233,6 +253,12 @@ h4 {
     footer {
         min-width: 100%;
     }
+
+    .column:hover .dis {
+        display: contents;
+        transition: all 0.3s ease;
+    }
+
 }
 
 
