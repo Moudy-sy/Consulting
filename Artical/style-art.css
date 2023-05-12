@@ -1,0 +1,189 @@
+P {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.navigator {
+    cursor: pointer;
+    height: 50px;
+}
+
+.column2 {
+    text-align: left !important;
+}
+
+.arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    max-height: 5px !important;
+}
+
+.navigator {
+    cursor: pointer;
+    height: 50px;
+}
+
+.arrow:hover {
+    border: solid rgb(0, 105, 181);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    max-height: 5px !important;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-bottom: -0px;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+body {
+    background-color: #001024;
+}
+
+* {
+    color: #fff;
+}
+
+#posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#posts h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: auto;
+}
+
+.post {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f8f832;
+    border-radius: 5px;
+    max-width: 900px;
+    text-align: left;
+}
+
+.post h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.post img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.post a {
+    display: inline-block;
+    text-align: center;
+    padding-top: 5px;
+    background-color: #003a6c;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-out;
+    font-size: 14px;
+}
+
+.post a:hover {
+    background-color: #001a3c;
+}
+
+.heart-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-left: 5px;
+    position: absolute;
+}
+
+.heart-btn i {
+    font-size: 25px;
+    color: #fff;
+}
+
+.heart-btn:hover i {
+    color: rgb(184, 0, 0);
+}
+
+.back {
+    float: left;
+    background-color: #003a6c;
+    border-radius: 5px;
+    width: 40px;
+    font-size: 12px;
+    height: 30px;
+    border: 1px solid;
+    cursor: pointer;
+    position: 0px !important;
+    text-decoration: none;
+    display: inline;
+    position: relative;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    #posts h1 {
+        font-size: 20px !important;
+        font-weight: bold;
+        text-align: center;
+        display: inline;
+        display: inline;
+    }
+
+    .post p {
+        font-size: 14px;
+    }
+
+
+    .back {
+        position: relative;
+        margin-right: 10px;
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    #posts h1 {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        display: inline;
+        display: inline;
+    }
+
+    .back {
+        position: relative;
+        margin: 10px;
+        display: inline;
+        margin-bottom: 10px !important;
+    }
+
+    .post {
+        max-width: 90%;
+    }
+
+    .post p {
+        font-size: 16px;
+    }
+}
