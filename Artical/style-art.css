@@ -18,6 +18,7 @@ P {
     display: inline-block;
     padding: 3px;
     max-height: 5px !important;
+    cursor: pointer;
 }
 
 .navigator {
